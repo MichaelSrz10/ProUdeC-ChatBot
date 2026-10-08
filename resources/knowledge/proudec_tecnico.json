@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "category": "proudec_tecnico",
+  "entries": [
+    {
+      "id": "tech-001",
+      "topic": { "es": "Stack de la aplicación", "en": "Application stack" },
+      "content": {
+        "es": "ProUDEC está construido con Laravel 12, vistas Blade, Vite y Tailwind CSS 4. Composer declara PHP ^8.2. La autenticación usa sesiones de Laravel. El chatbot llama a Gemini solo desde el backend.",
+        "en": "ProUDEC is built with Laravel 12, Blade views, Vite, and Tailwind CSS 4. Composer requires PHP ^8.2. Authentication uses Laravel sessions. The chatbot calls Gemini only from the backend."
+      },
+      "keywords": { "es": ["laravel", "php", "vite", "blade"], "en": ["laravel", "php", "vite", "blade"] },
+      "source": "docs/architecture.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "tech-002",
+      "topic": { "es": "Arquitectura del chatbot", "en": "Chatbot architecture" },
+      "content": {
+        "es": "El widget envía POST /chatbot/message. El controlador orquesta InputGuard, memoria de conversación en sesión, KnowledgeBase (JSON), PromptBuilder y GeminiClient. No hay base vectorial: se inyecta el conocimiento completo (context stuffing) porque el corpus es pequeño y cerrado.",
+        "en": "The widget sends POST /chatbot/message. The controller orchestrates InputGuard, session conversation memory, KnowledgeBase (JSON), PromptBuilder, and GeminiClient. There is no vector database: the full knowledge block is stuffed into the prompt because the corpus is small and closed."
+      },
+      "keywords": { "es": ["chatbot", "gemini", "arquitectura"], "en": ["chatbot", "gemini", "architecture"] },
+      "source": "docs/architecture.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "tech-003",
+      "topic": { "es": "Datos y aislamiento", "en": "Data and isolation" },
+      "content": {
+        "es": "Las migraciones cubren usuarios, sesiones, caché y colas. El chatbot no añade tablas ni lee resultados académicos. El conocimiento no incluye credenciales, esquema interno sensible ni rutas administrativas detalladas.",
+        "en": "Migrations cover users, sessions, cache, and queues. The chatbot does not add tables or read academic results. Knowledge does not include credentials, sensitive internal schema, or detailed admin routes."
+      },
+      "keywords": { "es": ["base de datos", "aislamiento"], "en": ["database", "isolation"] },
+      "source": "docs/database.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}

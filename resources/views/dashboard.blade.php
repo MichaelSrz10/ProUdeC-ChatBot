@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/Icono_ProUdeC_Blanco.ico') }}">
         <title>Dashboard ProUdeC</title>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <style>
             *{
             margin:0;
@@ -147,7 +148,7 @@
             th{
             background:#f1f1f1;
             }
-            button{
+            .simulacros button{
             padding:6px 12px;
             background:#63a20c;
             color:white;
@@ -155,7 +156,7 @@
             border-radius:4px;
             cursor:pointer;
             }
-            button:hover{
+            .simulacros button:hover{
             background:#78C20F;
             }
 
@@ -267,5 +268,6 @@
             </table>
 
         </div>
+        <x-chatbot.widget />
     </body>
 </html>

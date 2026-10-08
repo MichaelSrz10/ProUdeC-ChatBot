@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ChatbotController;
 
 
 Route::get('/', function () {
@@ -28,3 +29,11 @@ Route::get('/dashboard', function () {
 
 
 Route::post('/contacto', [Controller::class, 'enviar'])->name('contacto.enviar');
+
+Route::post('/chatbot/message', [ChatbotController::class, 'store'])
+    ->middleware('throttle:chatbot')
+    ->name('chatbot.message');
+
+Route::post('/chatbot/reset', [ChatbotController::class, 'reset'])
+    ->middleware('throttle:chatbot')
+    ->name('chatbot.reset');

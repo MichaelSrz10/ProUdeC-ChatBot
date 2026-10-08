@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "category": "declaracion_transhumana",
+  "entries": [
+    {
+      "id": "declaracion-001",
+      "topic": { "es": "Apartado 1: organizo y dirijo mi propia vida", "en": "Statement 1: I organize and direct my own life" },
+      "content": {
+        "es": "El MEDIT busca un sujeto que realice su plan de vida. En ProUDEC el estudiante decide cuándo entrar a la plataforma y qué secciones consultar; el chatbot orienta sobre el proyecto sin imponer una ruta ni resolver las tareas por la persona.",
+        "en": "MEDIT seeks a person who carries out their own life plan. In ProUDEC students choose when to use the platform and which sections to open; the chatbot orients without imposing a path or doing the work for them."
+      },
+      "keywords": { "es": ["vida", "ruta", "autonomía"], "en": ["life", "path", "autonomy"] },
+      "source": "docs/declaracion-persona-transhumana.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-002",
+      "topic": { "es": "Apartado 2: ser de valores y principios", "en": "Statement 2: a person of values and principles" },
+      "content": {
+        "es": "La Universidad de Cundinamarca orienta la formación a la vida, los valores democráticos, la civilidad y la libertad. ProUDEC aplica ese marco al limitar el chatbot al dominio institucional y al prohibir que la IA sustituya el esfuerzo académico.",
+        "en": "Universidad de Cundinamarca orients education toward life, democratic values, civility, and freedom. ProUDEC applies that frame by keeping the chatbot in an institutional domain and forbidding AI from replacing academic effort."
+      },
+      "keywords": { "es": ["valores", "principios", "medit"], "en": ["values", "principles", "medit"] },
+      "source": "docs/declaracion-persona-transhumana.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-003",
+      "topic": { "es": "Apartado 3: cuido las condiciones para aprender", "en": "Statement 3: I care for the conditions to learn" },
+      "content": {
+        "es": "Cuidar cuerpo, mente y entorno de aprendizaje, en este software, se traduce en una interfaz accesible (teclado, aviso claro, límites de uso) y en no sobrecargar a la persona con un bot que evalúe o vigile su rendimiento.",
+        "en": "Caring for body, mind, and the learning environment, in this software, means an accessible interface (keyboard, clear notice, usage limits) and not burdening the person with a bot that grades or surveils performance."
+      },
+      "keywords": { "es": ["cuidado", "bienestar", "accesibilidad"], "en": ["care", "wellbeing", "accessibility"] },
+      "source": "docs/ui-ux.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-004",
+      "topic": { "es": "Apartado 4: aprendo de mi vida y de las buenas prácticas de otros", "en": "Statement 4: I learn from my life and from others' good practices" },
+      "content": {
+        "es": "El proyecto busca que la comunidad academica practique competencias Saber Pro y revise su propio avance. El chatbot explica cómo está pensada la plataforma; no sustituye la revisión de intentos porque esos intentos aún no están persistidos como motor, y cuando existan no debe revelar claves.",
+        "en": "The project aims for the academic community to practice Saber Pro competencies and review their own progress. The chatbot explains how the platform is designed; it does not replace attempt review, and it must never reveal answer keys."
+      },
+      "keywords": { "es": ["aprendizaje", "prácticas", "retroalimentación"], "en": ["learning", "practices", "feedback"] },
+      "source": "docs/requirements.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-005",
+      "topic": { "es": "Apartado 5: bienestar en el proceso educativo", "en": "Statement 5: wellbeing in the educational process" },
+      "content": {
+        "es": "El MEDIT habla de realizarse y vivir bien. En el repositorio no existe un módulo de bienestar o motivación. El chatbot no finge que esa pantalla exista; el apartado se honra al no presionar ni patologizar al estudiante y al ofrecer orientación, no vigilancia.",
+        "en": "MEDIT speaks of flourishing and living well. The repository has no wellbeing or motivation module. The chatbot does not pretend that screen exists; the statement is honored by not pressuring the student and by offering guidance rather than surveillance."
+      },
+      "keywords": { "es": ["bienestar", "felicidad"], "en": ["wellbeing", "happiness"] },
+      "source": "docs/declaracion-persona-transhumana.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-006",
+      "topic": { "es": "Apartado 6: cada día mejoro y evoluciono", "en": "Statement 6: every day I improve and evolve" },
+      "content": {
+        "es": "La intención de producto es la práctica reiterada hacia Saber Pro. Hoy el dashboard muestra esa narrativa de progreso; el dato numérico de competencias o preguntas de las pantallas no está verificado en base de datos. El bot no inventa métricas de evolución personal.",
+        "en": "The product intention is repeated practice toward Saber Pro. The dashboard currently shows that progress narrative; on-screen numbers for competencies or questions are not verified in the database. The bot does not invent personal evolution metrics."
+      },
+      "keywords": { "es": ["mejora", "evolución", "progreso"], "en": ["improvement", "evolution", "progress"] },
+      "source": "ProUdeC_CONTEXT_MASTER.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-007",
+      "topic": { "es": "Apartado 7: tecnología como medio, no como fin", "en": "Statement 7: technology as a means, not an end" },
+      "content": {
+        "es": "La persona transhumana se perfecciona antes y no necesariamente a través de la tecnología. Por eso la IA no califica. Gemini solo asiste con información. El fin es la preparación situada en el territorio de Ubaté, no exhibir un modelo de lenguaje.",
+        "en": "The transhuman person is perfected first, and not necessarily through technology. That is why AI does not grade. Gemini only assists with information. The end is situated preparation in the Ubaté territory, not showcasing a language model."
+      },
+      "keywords": { "es": ["tecnología", "medio", "ia"], "en": ["technology", "means", "ai"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-008",
+      "topic": { "es": "Apartado 8: contribuyo a la comunidad", "en": "Statement 8: I contribute to the community" },
+      "content": {
+        "es": "ProUDEC es un proyecto de gestión del conocimiento para la comunidad académica de la Seccional Ubaté. El chatbot es bilingüe y usable por visitantes para que evaluadores y estudiantes de la región puedan orientarse sin barrera de cuenta, con límite más estricto por IP.",
+        "en": "ProUDEC is a knowledge-management project for the academic community of the Ubaté campus. The chatbot is bilingual and usable by guests so regional students and evaluators can get orientation without an account, with a stricter per-IP limit."
+      },
+      "keywords": { "es": ["comunidad", "ubaté", "territorio"], "en": ["community", "ubate", "territory"] },
+      "source": "ProUdeC_CONTEXT_MASTER.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-009",
+      "topic": { "es": "Apartado 9: libre, autónomo y responsable", "en": "Statement 9: free, autonomous, and responsible" },
+      "content": {
+        "es": "El estudiante es responsable de su práctica. El chatbot orienta pero no resuelve evaluaciones ni entrega respuestas del simulacro. Esa negativa es una decisión ética, no una limitación accidental del modelo.",
+        "en": "Students are responsible for their own practice. The chatbot guides but does not solve assessments or give mock-exam answers. That refusal is an ethical decision, not an accidental model limitation."
+      },
+      "keywords": { "es": ["autonomía", "responsabilidad", "libertad"], "en": ["autonomy", "responsibility", "freedom"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-010",
+      "topic": { "es": "Apartado 10: forjo mi autonomía y responsabilidad", "en": "Statement 10: I forge my autonomy and responsibility" },
+      "content": {
+        "es": "El widget declara de forma permanente que es un asistente de IA y que no reemplaza al docente ni a los resultados oficiales. La persona decide si usarlo y qué preguntar; el sistema no oculta su naturaleza.",
+        "en": "The widget permanently states that it is an AI assistant and that it does not replace the instructor or official results. The person decides whether to use it and what to ask; the system does not hide its nature."
+      },
+      "keywords": { "es": ["transparencia", "autonomía"], "en": ["transparency", "autonomy"] },
+      "source": "docs/ui-ux.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-011",
+      "topic": { "es": "Apartado 11: actos transformadores que no hacen daño", "en": "Statement 11: transformative acts that do no harm" },
+      "content": {
+        "es": "No se envían datos personales al LLM, el dominio es cerrado, se rechaza inventar, el registro no guarda el texto de los mensajes, y hay límites de tasa. El bot tampoco describe seguridad interna explotables.",
+        "en": "No personal data is sent to the LLM, the domain is closed, invention is refused, logs do not store message text, and rate limits apply. The bot also does not describe exploitable internal security."
+      },
+      "keywords": { "es": ["no daño", "privacidad", "ética"], "en": ["do no harm", "privacy", "ethics"] },
+      "source": "docs/security.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-012",
+      "topic": { "es": "Apartado 12: motivo y me motivo con otros", "en": "Statement 12: I motivate and am motivated with others" },
+      "content": {
+        "es": "No hay módulo de motivación en el código. El chatbot puede invitar a explorar la plataforma y a preguntar al docente; no simula un coach emocional ni promete puntajes.",
+        "en": "There is no motivation module in the code. The chatbot may invite people to explore the platform and ask their instructor; it does not simulate an emotional coach or promise scores."
+      },
+      "keywords": { "es": ["motivación", "comunidad"], "en": ["motivation", "community"] },
+      "source": "docs/declaracion-persona-transhumana.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "declaracion-013",
+      "topic": { "es": "Cómo se aplica la declaración en el proyecto", "en": "How the declaration is applied in the project" },
+      "content": {
+        "es": "Se aplica así: la IA es medio y no fin (apartado 7) porque no evalúa; se protege la autonomía (1, 9 y 10) al no resolver exámenes y al declararse como IA; se evita el daño (11) con privacidad, dominio cerrado y registro sin contenido; se aporta a la comunidad de Ubaté (8) con orientación bilingüe. Los apartados 5 y 12 no se venden como funcionalidades inexistentes.",
+        "en": "It is applied as follows: AI is a means not an end (statement 7) because it does not grade; autonomy is protected (1, 9, and 10) by not solving exams and by disclosing AI; harm is avoided (11) through privacy, a closed domain, and content-free logs; the Ubaté community is served (8) with bilingual orientation. Statements 5 and 12 are not sold as unimplemented features."
+      },
+      "keywords": { "es": ["aplicación", "declaración", "proyecto"], "en": ["applied", "declaration", "project"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}

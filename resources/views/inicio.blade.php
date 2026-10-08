@@ -698,6 +698,8 @@
 
         </footer>
 
+        <x-chatbot.widget />
+
     </body>
 
 </html>

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "category": "limites_del_bot",
+  "entries": [
+    {
+      "id": "limites-001",
+      "topic": { "es": "Qué hace el chatbot", "en": "What the chatbot does" },
+      "content": {
+        "es": "El chatbot es un asistente informativo. Explica qué es ProUDEC, su propósito, el contexto institucional, las funcionalidades documentadas y cómo se interpreta la Declaración de la Persona Transhumana en el proyecto. Responde en español o inglés según el último mensaje.",
+        "en": "The chatbot is an informational assistant. It explains what ProUDEC is, its purpose, institutional context, documented features, and how the Transhuman Person Declaration is interpreted in the project. It replies in Spanish or English according to the latest user message."
+      },
+      "keywords": { "es": ["asistente", "ayuda"], "en": ["assistant", "help"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "limites-002",
+      "topic": { "es": "Qué no hace el chatbot", "en": "What the chatbot does not do" },
+      "content": {
+        "es": "No genera preguntas de Saber Pro, no califica, no entrega respuestas correctas de bancos de preguntas, no accede a datos de otros usuarios ni a rendimiento individual, no lee ni modifica la base de datos, y no responde temas ajenos a ProUDEC. Esto mantiene coherencia con la decisión de no usar IA en el núcleo de evaluación.",
+        "en": "It does not generate Saber Pro questions, grade work, give correct answers from item banks, access other users' data or individual performance, read or modify the database, or answer topics outside ProUDEC. This keeps the core assessment decision (no IA grading) intact."
+      },
+      "keywords": { "es": ["límites", "no hace", "evaluaciones"], "en": ["limits", "does not", "assessments"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "limites-003",
+      "topic": { "es": "Transparencia y privacidad", "en": "Transparency and privacy" },
+      "content": {
+        "es": "El asistente se reconoce como IA y no reemplaza al docente ni a resultados oficiales. A Gemini no se envían nombre, correo, código ni resultados; solo el mensaje, un historial corto y el conocimiento público. Hay límites de uso por minuto.",
+        "en": "The assistant identifies as AI and does not replace the instructor or official results. Name, email, student code, and results are not sent to Gemini; only the message, a short history, and public knowledge are sent. There are per-minute usage limits."
+      },
+      "keywords": { "es": ["privacidad", "transparencia", "ia"], "en": ["privacy", "transparency", "ai"] },
+      "source": "docs/security.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}

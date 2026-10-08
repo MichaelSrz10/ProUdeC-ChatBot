@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "category": "proudec_general",
+  "entries": [
+    {
+      "id": "general-001",
+      "topic": { "es": "Qué es ProUDEC", "en": "What ProUDEC is" },
+      "content": {
+        "es": "ProUDEC es un proyecto de gestión del conocimiento: una plataforma web para potenciar las habilidades evaluadas en Saber Pro de los estudiantes de Ingeniería de Sistemas y Computación de la Universidad de Cundinamarca, Seccional Ubaté.",
+        "en": "ProUDEC is a knowledge-management project: a web platform to strengthen the skills assessed by Saber Pro for Systems and Computing Engineering students at Universidad de Cundinamarca, Ubaté campus."
+      },
+      "keywords": { "es": ["proudec", "qué es", "plataforma"], "en": ["proudec", "what is", "platform"] },
+      "source": "README.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "general-002",
+      "topic": { "es": "Propósito", "en": "Purpose" },
+      "content": {
+        "es": "El propósito es fortalecer competencias asociadas a Saber Pro mediante una plataforma educativa institucional accesible para la comunidad académica de la Seccional Ubaté. La página pública lo describe como una solución tecnológica para el desempeño académico con herramientas digitales prácticas.",
+        "en": "The purpose is to strengthen Saber Pro-related competencies through an institutional educational platform for the Ubaté campus community. The public page describes it as a technological solution for academic performance using practical digital tools."
+      },
+      "keywords": { "es": ["propósito", "objetivo", "saber pro"], "en": ["purpose", "goal", "saber pro"] },
+      "source": "ProUdeC_CONTEXT_MASTER.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "general-003",
+      "topic": { "es": "Contexto institucional", "en": "Institutional context" },
+      "content": {
+        "es": "El proyecto se sitúa en la Universidad de Cundinamarca, Seccional Ubaté, en el programa de Ingeniería de Sistemas y Computación, con Saber Pro como referente de evaluación externa.",
+        "en": "The project is based at Universidad de Cundinamarca, Ubaté campus, in the Systems and Computing Engineering program, with Saber Pro as the external assessment reference."
+      },
+      "keywords": { "es": ["universidad", "ubaté", "cundinamarca"], "en": ["university", "ubate", "cundinamarca"] },
+      "source": "ProUdeC_CONTEXT_MASTER.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "general-004",
+      "topic": { "es": "Población objetivo", "en": "Target audience" },
+      "content": {
+        "es": "La población objetivo son los estudiantes de Ingeniería de Sistemas y Computación de la Seccional Ubaté. La interfaz también contempla el trabajo de la comunidad académica (contenidos, simulacros, resultados) como intención de producto.",
+        "en": "The target audience is Systems and Computing Engineering students at the Ubaté campus. The interface also contemplates academic community work (contents, mock exams, results) as a product intention."
+      },
+      "keywords": { "es": ["estudiantes", "población"], "en": ["students", "audience"] },
+      "source": "docs/requirements.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}

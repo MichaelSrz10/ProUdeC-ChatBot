@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "category": "proudec_funcionalidades",
+  "entries": [
+    {
+      "id": "func-001",
+      "topic": { "es": "Funcionalidades implementadas", "en": "Implemented features" },
+      "content": {
+        "es": "Hoy el código permite: ver la página pública; registrarse; iniciar y cerrar sesión; entrar al dashboard autenticado; enviar un formulario de contacto; y usar el chatbot informativo. El registro pide nombre, correo y contraseña (mínimo 8 caracteres con confirmación).",
+        "en": "The current code allows: viewing the public page; registering; signing in and out; opening the authenticated dashboard; submitting a contact form; and using the informational chatbot. Registration requires name, email, and password (minimum 8 characters with confirmation)."
+      },
+      "keywords": { "es": ["registro", "login", "dashboard", "contacto"], "en": ["register", "login", "dashboard", "contact"] },
+      "source": "docs/requirements.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "func-002",
+      "topic": { "es": "Roles", "en": "Roles" },
+      "content": {
+        "es": "No hay campo de rol en la tabla de usuarios ni políticas por estudiante, docente o administrador. Cualquier usuario autenticado accede al dashboard. El chatbot muestra el mismo conocimiento a visitantes y a usuarios autenticados; no personaliza con datos de la cuenta.",
+        "en": "There is no role field on users and no student/teacher/admin policies. Any authenticated user can open the dashboard. The chatbot shows the same knowledge to guests and signed-in users; it does not personalize with account data."
+      },
+      "keywords": { "es": ["roles", "permisos", "docente", "estudiante"], "en": ["roles", "permissions", "teacher", "student"] },
+      "source": "docs/roles-permissions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "func-003",
+      "topic": { "es": "Evaluaciones y simulacros", "en": "Assessments and mock exams" },
+      "content": {
+        "es": "La página pública y el dashboard mencionan simulacros, competencias (por ejemplo lectura crítica, razonamiento cuantitativo, competencias ciudadanas y comunicación escrita), analítica y retroalimentación como objetivos de producto. En el repositorio no existe aún un motor que genere, califique o almacene esas evaluaciones. El chatbot no entrega preguntas ni respuestas de ningún banco.",
+        "en": "The public page and dashboard mention mock exams, competencies (for example critical reading, quantitative reasoning, citizenship competencies, and written communication), analytics, and feedback as product goals. The repository does not yet include an engine that generates, grades, or stores those assessments. The chatbot does not provide questions or answers from any item bank."
+      },
+      "keywords": { "es": ["simulacro", "evaluación", "diagnóstico", "competencias"], "en": ["mock exam", "assessment", "diagnostic", "competencies"] },
+      "source": "docs/requirements.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "func-004",
+      "topic": { "es": "Progreso, recursos y notificaciones", "en": "Progress, resources, and notifications" },
+      "content": {
+        "es": "El menú del dashboard lista contenidos, simulacros, resultados, perfil y configuración. No hay tablas de recursos, progreso persistido ni notificaciones internas. El chatbot puede orientar sobre la intención de esas secciones, no sobre resultados individuales.",
+        "en": "The dashboard menu lists contents, mock exams, results, profile, and settings. There are no tables for resources, persisted progress, or internal notifications. The chatbot can explain the intention of those sections, not individual results."
+      },
+      "keywords": { "es": ["progreso", "recursos", "notificaciones"], "en": ["progress", "resources", "notifications"] },
+      "source": "docs/database.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}

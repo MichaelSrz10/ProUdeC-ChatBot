@@ -32,5 +32,14 @@
         <env name="PULSE_ENABLED" value="false"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="NIGHTWATCH_ENABLED" value="false"/>
+        <env name="CHATBOT_ENABLED" value="true"/>
+        <env name="GEMINI_API_KEY" value="test-not-a-real-key"/>
+        <env name="GEMINI_MODEL" value="gemini-2.5-flash"/>
+        <env name="GEMINI_BASE_URL" value="https://generativelanguage.googleapis.com/v1beta"/>
+        <env name="CHATBOT_TIMEOUT_SECONDS" value="5"/>
+        <env name="CHATBOT_MAX_INPUT_CHARS" value="500"/>
+        <env name="CHATBOT_HISTORY_TURNS" value="6"/>
+        <env name="CHATBOT_RATE_LIMIT_AUTH_PER_MINUTE" value="10"/>
+        <env name="CHATBOT_RATE_LIMIT_GUEST_PER_MINUTE" value="5"/>
     </php>
 </phpunit>

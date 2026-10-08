@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "category": "faq",
+  "entries": [
+    {
+      "id": "faq-001",
+      "topic": { "es": "¿Necesito cuenta para usar el chatbot?", "en": "Do I need an account to use the chatbot?" },
+      "content": {
+        "es": "No. Visitantes pueden usarlo en la página pública con un límite más estricto por minuto. Quienes inician sesión tienen un límite un poco más alto. El conocimiento es el mismo.",
+        "en": "No. Guests can use it on the public page with a stricter per-minute limit. Signed-in users have a slightly higher limit. The knowledge is the same."
+      },
+      "keywords": { "es": ["cuenta", "visitante", "faq"], "en": ["account", "guest", "faq"] },
+      "source": "docs/roles-permissions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "faq-002",
+      "topic": { "es": "¿El bot me prepara el Saber Pro resolviendo preguntas?", "en": "Will the bot prepare me for Saber Pro by solving questions?" },
+      "content": {
+        "es": "No. Puede explicarte qué es ProUDEC y cómo está pensada la preparación. No genera ítems, no da claves y no califica. La práctica responsable queda en la persona y, cuando exista el motor de evaluaciones, en esa herramienta.",
+        "en": "No. It can explain what ProUDEC is and how preparation is designed. It does not generate items, give keys, or grade. Responsible practice stays with the person and, when the assessment engine exists, with that tool."
+      },
+      "keywords": { "es": ["saber pro", "preguntas", "respuestas"], "en": ["saber pro", "questions", "answers"] },
+      "source": "docs/decisions.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "faq-003",
+      "topic": { "es": "¿Qué hago si el bot no sabe un dato?", "en": "What if the bot does not know a fact?" },
+      "content": {
+        "es": "Debe decir que no dispone de esa información y sugerir contactar al equipo del proyecto o al docente. No debe inventar cifras de usuarios, preguntas o competencias.",
+        "en": "It should say it does not have that information and suggest contacting the project team or the instructor. It must not invent user counts, question counts, or competency counts."
+      },
+      "keywords": { "es": ["no sé", "contacto"], "en": ["unknown", "contact"] },
+      "source": "docs/requirements.md",
+      "last_verified": "2026-10-07"
+    },
+    {
+      "id": "faq-004",
+      "topic": { "es": "¿Cómo se prueba el chatbot?", "en": "How is the chatbot tested?" },
+      "content": {
+        "es": "Las pruebas automatizadas simulan la API de Gemini con Http::fake. Se ejecutan con php artisan test o composer test. No hace falta una clave real para esa suite.",
+        "en": "Automated tests simulate the Gemini API with Http::fake. Run them with php artisan test or composer test. A real API key is not required for that suite."
+      },
+      "keywords": { "es": ["pruebas", "test"], "en": ["tests", "testing"] },
+      "source": "docs/testing.md",
+      "last_verified": "2026-10-07"
+    }
+  ]
+}
