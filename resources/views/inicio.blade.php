@@ -384,7 +384,6 @@
 
         </style>
 
-        @vite(['resources/css/chatbot.css', 'resources/js/chatbot/index.js'])
     </head>
 
     <body>

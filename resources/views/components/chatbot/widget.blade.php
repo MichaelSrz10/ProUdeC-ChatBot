@@ -50,7 +50,7 @@
     @once
         <meta name="csrf-token" content="{{ csrf_token() }}">
         @unless (app()->environment('testing'))
-            @vite(['resources/css/app.css', 'resources/js/app.js'])
+            @vite(['resources/css/chatbot.css', 'resources/js/chatbot/index.js'])
         @endunless
     @endonce
     <div
