@@ -74,6 +74,7 @@ class ChatbotController extends Controller
             return response()->json([
                 'reply' => $promptBuilder->unavailableMessage($language),
                 'status' => 'unavailable',
+                'reason' => $e->getMessage(),
                 'language' => $language === 'mixed' ? 'es' : $language,
             ], 503);
         }

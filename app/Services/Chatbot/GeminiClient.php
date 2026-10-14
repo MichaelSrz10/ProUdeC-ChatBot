@@ -87,7 +87,9 @@ class GeminiClient
             ]);
         }
 
-        throw new ChatbotUnavailableException('Gemini request failed.');
+        $status = $lastResponse !== null ? $lastResponse->status() : 0;
+
+        throw new ChatbotUnavailableException("Gemini request failed (HTTP {$status}).");
     }
 
     /**
