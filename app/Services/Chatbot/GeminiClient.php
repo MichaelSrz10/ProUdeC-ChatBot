@@ -7,6 +7,7 @@ use App\Services\Chatbot\Exceptions\ChatbotUnavailableException;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class GeminiClient
 {
@@ -21,9 +22,14 @@ class GeminiClient
             throw new ChatbotUnavailableException('API key is not configured.');
         }
 
-        $model = (string) config('chatbot.model');
         $baseUrl = (string) config('chatbot.base_url');
-        $url = rtrim($baseUrl, '/').'/models/'.$model.':generateContent';
+        $primaryModel = (string) config('chatbot.model', 'gemini-flash-lite-latest');
+        $fallbackModels = (array) config('chatbot.fallback_models', ['gemini-3.5-flash-lite']);
+
+        $models = array_values(array_unique(array_filter([
+            $primaryModel,
+            ...$fallbackModels,
+        ])));
 
         $payload = [
             'system_instruction' => $prompt['system_instruction'],
@@ -34,37 +40,54 @@ class GeminiClient
             ],
         ];
 
-        $response = $this->send($url, $payload, $apiKey);
+        $rateLimited = false;
+        $lastResponse = null;
 
-        if ($response->serverError()) {
+        foreach ($models as $model) {
+            $url = rtrim($baseUrl, '/').'/models/'.$model.':generateContent';
+
             $response = $this->send($url, $payload, $apiKey);
+
+            if ($response->serverError()) {
+                $response = $this->send($url, $payload, $apiKey);
+            }
+
+            if ($response->successful()) {
+                $json = $response->json();
+
+                if (is_array($json)) {
+                    $text = data_get($json, 'candidates.0.content.parts.0.text');
+
+                    if (is_string($text) && trim($text) !== '') {
+                        return trim($text);
+                    }
+                }
+            }
+
+            if ($response->status() === 429) {
+                $rateLimited = true;
+            }
+
+            Log::warning("Gemini model [{$model}] failed with status {$response->status()}, checking next candidate if available.", [
+                'status' => $response->status(),
+                'body' => substr($response->body(), 0, 200),
+            ]);
+
+            $lastResponse = $response;
         }
 
-        if ($response->status() === 429) {
+        if ($rateLimited) {
             throw new ChatbotRateLimitedException('Gemini quota exceeded.');
         }
 
-        if ($response->failed()) {
-            \Illuminate\Support\Facades\Log::error('Gemini request failed', [
-                'status' => $response->status(),
-                'body' => $response->body(),
+        if ($lastResponse !== null && $lastResponse->failed()) {
+            Log::error('All Gemini request attempts failed', [
+                'status' => $lastResponse->status(),
+                'body' => $lastResponse->body(),
             ]);
-            throw new ChatbotUnavailableException('Gemini request failed.');
         }
 
-        $json = $response->json();
-
-        if (! is_array($json)) {
-            throw new ChatbotUnavailableException('Gemini returned unexpected JSON.');
-        }
-
-        $text = data_get($json, 'candidates.0.content.parts.0.text');
-
-        if (! is_string($text) || trim($text) === '') {
-            throw new ChatbotUnavailableException('Gemini returned an empty reply.');
-        }
-
-        return trim($text);
+        throw new ChatbotUnavailableException('Gemini request failed.');
     }
 
     /**

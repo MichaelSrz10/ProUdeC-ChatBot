@@ -6,7 +6,12 @@ return [
 
     'api_key' => env('GEMINI_API_KEY'),
 
-    'model' => env('GEMINI_MODEL', 'gemini-3.8-flash'),
+    'model' => env('GEMINI_MODEL', 'gemini-flash-lite-latest'),
+
+    'fallback_models' => [
+        'gemini-3.5-flash-lite',
+        'gemini-3-flash-preview',
+    ],
 
     'base_url' => env('GEMINI_BASE_URL', 'https://generativelanguage.googleapis.com/v1beta'),
 
